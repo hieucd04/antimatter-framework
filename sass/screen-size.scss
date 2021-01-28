@@ -1,0 +1,34 @@
+$S: 576px;
+$M: 768px;
+$L: 992px;
+$XL: 1200px;
+
+@mixin S {
+    @media (min-width: #{$S}) {
+        @content;
+    }
+}
+
+@mixin M {
+    @media (min-width: #{$M}) {
+        @content;
+    }
+}
+
+@mixin L {
+    @media (min-width: #{$L}) {
+        @content;
+    }
+}
+
+@mixin XL {
+    @media (min-width: #{$XL}) {
+        @content;
+    }
+}
+
+@mixin custom($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}

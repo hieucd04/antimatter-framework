@@ -1,0 +1,34 @@
+@use "colors" as colors;
+
+.markdown {
+    & hr {
+        display: block;
+        height: 0;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        border: 0;
+        border-top: 1px solid colors.$gray;
+        unicode-bidi: isolate;
+        overflow: hidden;
+    }
+
+    & ul {
+        display: block;
+        list-style: disc;
+        padding-inline-start: 40px;
+    }
+
+    & ol {
+        display: block;
+        list-style: decimal;
+        padding-inline-start: 40px;
+    }
+
+    & blockquote {
+        border-left: 5px solid colors.$gray;
+        font-style: italic;
+        padding: 10px 20px;
+    }
+}
